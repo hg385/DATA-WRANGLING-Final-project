@@ -24,7 +24,7 @@
 - For any trips that have a fare amount but have a trip distance of 0, calculate the distance this way: (Fare amount - 2.5) / 2.5
 - For any trips that have a trip distance but have a fare amount of 0, calculate the fare amount this way: 2.5 + (trip distance x 2.5)
 
-## Dashboard Steps
+## Analysis Steps
 - What's the average number of trips we can expect this week?
 - What's the average fare per trip we expect to collect?
 - What's the average distance traveled per trip?
