@@ -1,9 +1,9 @@
-<h1 align="center">:taxi: Maven-Analytics-NYC-Taxi-Challenge :taxi:</h1>
+<h1 align="center">:taxi: NYC-Taxi :taxi:</h1>
 <p align="center">
 <img src= "https://user-images.githubusercontent.com/74512335/138792965-4a9225f1-09fc-4479-8dac-355f87af8f6f.png" />
 </p>
 
-**Link to challange: https://www.mavenanalytics.io/blog/maven-taxi-challenge**
+**Link to dataset: https://maven-datasets.s3.amazonaws.com/Taxi+Trips/NYC_Taxi_Trips.zip**
 
 ## About the dataset
 - This dataset contains 6 tables in csv format, along with a geospatial map in TopoJSON and Shapefile formats
@@ -13,7 +13,7 @@
 - The Taxi Zones table contains information about 265 zone locations in New York City, including the location id, borough, and service zone
 - The Taxi Zones Map files contain a map of New York City with divisions for the 265 locations that can be used to create custom map visuals in Power BI (TopoJSON) or Tableau (Shapefile)
 
-## Cleaning Requirements
+## Cleaning Steps
 - Let’s stick to trips that were NOT sent via “store and forward”
 - I’m only interested in street-hailed trips paid by card or cash, with a standard rate
 - We can remove any trips with dates before 2017 or after 2020, along with any trips with pickups or drop-offs into unknown zones
@@ -24,7 +24,7 @@
 - For any trips that have a fare amount but have a trip distance of 0, calculate the distance this way: (Fare amount - 2.5) / 2.5
 - For any trips that have a trip distance but have a fare amount of 0, calculate the fare amount this way: 2.5 + (trip distance x 2.5)
 
-## Dashboard Requirements
+## Dashboard Steps
 - What's the average number of trips we can expect this week?
 - What's the average fare per trip we expect to collect?
 - What's the average distance traveled per trip?
