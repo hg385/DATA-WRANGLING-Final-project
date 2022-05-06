@@ -21,8 +21,6 @@
 - If a pickup date/time is AFTER the drop-off date/time, let’s swap them
 - We can remove trips lasting longer than a day, and any trips which show both a distance and fare amount of 0
 - If you notice any records where the fare, taxes, and surcharges are ALL negative, please make them positive
-- For any trips that have a fare amount but have a trip distance of 0, calculate the distance this way: (Fare amount - 2.5) / 2.5
-- For any trips that have a trip distance but have a fare amount of 0, calculate the fare amount this way: 2.5 + (trip distance x 2.5)
 
 ## Analysis Steps
 - What's the average number of trips we can expect this week?
